@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">sim-nest README splash</title>
+<desc id="desc">A README splash graphic for sim-nest showing a minimal kernel connected to Rust crate families.</desc>
+
+<defs>
+  <linearGradient id="nestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8d6cff"/>
+    <stop offset="22%" stop-color="#4fb5ff"/>
+    <stop offset="45%" stop-color="#29f0d0"/>
+    <stop offset="67%" stop-color="#ffd34a"/>
+    <stop offset="84%" stop-color="#ff7a45"/>
+    <stop offset="100%" stop-color="#ff5fc8"/>
+  </linearGradient>
+  <radialGradient id="bgRad" cx="50%" cy="42%" r="75%">
+    <stop offset="0%" stop-color="#13203c"/>
+    <stop offset="44%" stop-color="#07111f"/>
+    <stop offset="100%" stop-color="#02060c"/>
+  </radialGradient>
+  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="45%" stop-color="#f7fbff"/>
+    <stop offset="100%" stop-color="#74d9ff"/>
+  </radialGradient>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="blur"/>
+    <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.25 0 0 0 0 0.6 0 0 0 0 1 0 0 0 .9 0" result="glow"/>
+    <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    .title { font: 800 108px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: 4px; fill: #f7fbff; }
+    .subtitle { font: 400 29px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #a9bdd8; letter-spacing: .5px; }
+    .label { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #f7fbff; letter-spacing: .4px; }
+    .small { font: 400 17px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #a9bdd8; }
+    .micro { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8ea5c7; letter-spacing: .4px; }
+    .logoS { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 900; fill: #ffffff; filter:url(#tinyGlow); }
+    .panel { fill: rgba(7,17,31,.72); stroke: rgba(156,190,255,.22); stroke-width: 1.4; }
+    .line { fill: none; stroke-width: 1.8; opacity: .9; filter: url(#tinyGlow); }
+    .mutedLine { fill: none; stroke: rgba(149, 179, 216, .20); stroke-width: 1; }
+  </style>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bgRad)"/>
+<g opacity=".65"><path d='M0 0 L0 900' class='mutedLine' opacity='.18'/><path d='M80 0 L80 900' class='mutedLine' opacity='.18'/><path d='M160 0 L160 900' class='mutedLine' opacity='.18'/><path d='M240 0 L240 900' class='mutedLine' opacity='.18'/><path d='M320 0 L320 900' class='mutedLine' opacity='.18'/><path d='M400 0 L400 900' class='mutedLine' opacity='.18'/><path d='M480 0 L480 900' class='mutedLine' opacity='.18'/><path d='M560 0 L560 900' class='mutedLine' opacity='.18'/><path d='M640 0 L640 900' class='mutedLine' opacity='.18'/><path d='M720 0 L720 900' class='mutedLine' opacity='.18'/><path d='M800 0 L800 900' class='mutedLine' opacity='.18'/><path d='M880 0 L880 900' class='mutedLine' opacity='.18'/><path d='M960 0 L960 900' class='mutedLine' opacity='.18'/><path d='M1040 0 L1040 900' class='mutedLine' opacity='.18'/><path d='M1120 0 L1120 900' class='mutedLine' opacity='.18'/><path d='M1200 0 L1200 900' class='mutedLine' opacity='.18'/><path d='M1280 0 L1280 900' class='mutedLine' opacity='.18'/><path d='M1360 0 L1360 900' class='mutedLine' opacity='.18'/><path d='M1440 0 L1440 900' class='mutedLine' opacity='.18'/><path d='M1520 0 L1520 900' class='mutedLine' opacity='.18'/><path d='M1600 0 L1600 900' class='mutedLine' opacity='.18'/><path d='M0 0 L1600 0' class='mutedLine' opacity='.13'/><path d='M0 80 L1600 80' class='mutedLine' opacity='.13'/><path d='M0 160 L1600 160' class='mutedLine' opacity='.13'/><path d='M0 240 L1600 240' class='mutedLine' opacity='.13'/><path d='M0 320 L1600 320' class='mutedLine' opacity='.13'/><path d='M0 400 L1600 400' class='mutedLine' opacity='.13'/><path d='M0 480 L1600 480' class='mutedLine' opacity='.13'/><path d='M0 560 L1600 560' class='mutedLine' opacity='.13'/><path d='M0 640 L1600 640' class='mutedLine' opacity='.13'/><path d='M0 720 L1600 720' class='mutedLine' opacity='.13'/><path d='M0 800 L1600 800' class='mutedLine' opacity='.13'/><path d='M0 880 L1600 880' class='mutedLine' opacity='.13'/></g>
+<text x="92" y="108" class="title">sim-<tspan fill="url(#nestGrad)">nest</tspan></text>
+<text x="100" y="151" class="subtitle">minimal Rust kernel | many crates | everything connects</text>
+<g><path class='line' stroke='#ffffff' d='M642,350 C490,350 490,208 346,208'/><circle cx='346' cy='208' r='5' fill='#ffffff' filter='url(#tinyGlow)'/><path class='line' stroke='#7c7cff' d='M642,378 C490,378 490,303 346,303'/><circle cx='346' cy='303' r='5' fill='#7c7cff' filter='url(#tinyGlow)'/><path class='line' stroke='#b56cff' d='M642,406 C490,406 490,398 346,398'/><circle cx='346' cy='398' r='5' fill='#b56cff' filter='url(#tinyGlow)'/><path class='line' stroke='#b56cff' d='M642,434 C490,434 490,493 346,493'/><circle cx='346' cy='493' r='5' fill='#b56cff' filter='url(#tinyGlow)'/><path class='line' stroke='#ffd34a' d='M642,462 C490,462 490,588 346,588'/><circle cx='346' cy='588' r='5' fill='#ffd34a' filter='url(#tinyGlow)'/><path class='line' stroke='#49e6a2' d='M642,490 C490,490 490,683 346,683'/><circle cx='346' cy='683' r='5' fill='#49e6a2' filter='url(#tinyGlow)'/><path class='line' stroke='#47b6ff' d='M958,350 C1110,350 1110,208 1254,208'/><circle cx='1254' cy='208' r='5' fill='#47b6ff' filter='url(#tinyGlow)'/><path class='line' stroke='#2ee6ff' d='M958,378 C1110,378 1110,303 1254,303'/><circle cx='1254' cy='303' r='5' fill='#2ee6ff' filter='url(#tinyGlow)'/><path class='line' stroke='#ff8b3d' d='M958,406 C1110,406 1110,398 1254,398'/><circle cx='1254' cy='398' r='5' fill='#ff8b3d' filter='url(#tinyGlow)'/><path class='line' stroke='#ff5fc8' d='M958,434 C1110,434 1110,493 1254,493'/><circle cx='1254' cy='493' r='5' fill='#ff5fc8' filter='url(#tinyGlow)'/><path class='line' stroke='#ff5fc8' d='M958,462 C1110,462 1110,588 1254,588'/><circle cx='1254' cy='588' r='5' fill='#ff5fc8' filter='url(#tinyGlow)'/><path class='line' stroke='#64e8ff' d='M958,490 C1110,490 1110,683 1254,683'/><circle cx='1254' cy='683' r='5' fill='#64e8ff' filter='url(#tinyGlow)'/></g>
+<g filter="url(#softGlow)">
+  <circle cx="800" cy="420" r="150" fill="#02060c" stroke="url(#nestGrad)" stroke-width="4"/>
+  <polygon points='800.0,302.0 902.2,361.0 902.2,479.0 800.0,538.0 697.8,479.0 697.8,361.0' fill='none' stroke='url(#nestGrad)' stroke-width='10.0' stroke-linejoin='round' opacity='0.95'/>
+<polygon points='800.0,328.0 879.7,374.0 879.7,466.0 800.0,512.0 720.3,466.0 720.3,374.0' fill='none' stroke='url(#nestGrad)' stroke-width='7.0' stroke-linejoin='round' opacity='0.75' stroke-dasharray='40.0 20.0'/>
+<polygon points='800.0,354.0 857.2,387.0 857.2,453.0 800.0,486.0 742.8,453.0 742.8,387.0' fill='none' stroke='url(#nestGrad)' stroke-width='5.0' stroke-linejoin='round' opacity='0.55' stroke-dasharray='40.0 20.0'/>
+<circle cx='800.0' cy='420.0' r='16.0' fill='url(#coreGlow)' opacity='.95'/>
+<text x='800.0' y='462.0' text-anchor='middle' class='logoS' font-size='156.0'>S</text>
+  <text x="800" y="605" text-anchor="middle" class="micro">sim-kernel at the center</text>
+</g>
+<g><circle cx='800.0' cy='163.0' r='5.6' fill='#ffffff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L800.0,163.0' stroke='#ffffff' stroke-width='.9' opacity='.35'/><circle cx='888.5' cy='191.5' r='7.6' fill='#47b6ff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L888.5,191.5' stroke='#47b6ff' stroke-width='.9' opacity='.35'/><circle cx='981.2' cy='221.2' r='6.3' fill='#7c7cff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L981.2,221.2' stroke='#7c7cff' stroke-width='.9' opacity='.35'/><circle cx='1030.1' cy='305.4' r='7.9' fill='#7c7cff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L1030.1,305.4' stroke='#7c7cff' stroke-width='.9' opacity='.35'/><circle cx='1055.9' cy='396.3' r='5.6' fill='#7c7cff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L1055.9,396.3' stroke='#7c7cff' stroke-width='.9' opacity='.35'/><circle cx='1047.2' cy='490.3' r='9.3' fill='#b56cff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L1047.2,490.3' stroke='#b56cff' stroke-width='.9' opacity='.35'/><circle cx='995.5' cy='567.6' r='12.8' fill='#ffd34a' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L995.5,567.6' stroke='#ffd34a' stroke-width='.9' opacity='.35'/><circle cx='935.3' cy='638.5' r='7.9' fill='#49e6a2' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L935.3,638.5' stroke='#49e6a2' stroke-width='.9' opacity='.35'/><circle cx='851.6' cy='696.2' r='10.8' fill='#b56cff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L851.6,696.2' stroke='#b56cff' stroke-width='.9' opacity='.35'/><circle cx='750.6' cy='684.4' r='8.2' fill='#2ee6ff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L750.6,684.4' stroke='#2ee6ff' stroke-width='.9' opacity='.35'/><circle cx='664.7' cy='638.5' r='5.6' fill='#2ee6ff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L664.7,638.5' stroke='#2ee6ff' stroke-width='.9' opacity='.35'/><circle cx='604.5' cy='567.6' r='10.2' fill='#ff5fc8' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L604.5,567.6' stroke='#ff5fc8' stroke-width='.9' opacity='.35'/><circle cx='541.3' cy='493.6' r='9.5' fill='#ff8b3d' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L541.3,493.6' stroke='#ff8b3d' stroke-width='.9' opacity='.35'/><circle cx='544.1' cy='396.3' r='7.9' fill='#ffd34a' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L544.1,396.3' stroke='#ffd34a' stroke-width='.9' opacity='.35'/><circle cx='548.5' cy='294.7' r='10.8' fill='#ffd34a' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L548.5,294.7' stroke='#ffd34a' stroke-width='.9' opacity='.35'/><circle cx='626.9' cy='230.1' r='14.0' fill='#ff5fc8' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L626.9,230.1' stroke='#ff5fc8' stroke-width='.9' opacity='.35'/><circle cx='702.8' cy='169.2' r='9.5' fill='#64e8ff' opacity='.92' filter='url(#tinyGlow)'/><path d='M800,420 L702.8,169.2' stroke='#64e8ff' stroke-width='.9' opacity='.35'/></g>
+<g>
+<g>
+  <rect x='66' y='170' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='208' r='17' fill='none' stroke='#ffffff' stroke-width='3'/>
+  <text x='138' y='201' class='label' font-size='19'>sim-shape</text>
+  <text x='138' y='225' class='small' font-size='14'>match | bind | dispatch</text>
+</g>
+<g>
+  <rect x='66' y='265' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='303' r='17' fill='none' stroke='#7c7cff' stroke-width='3'/>
+  <text x='138' y='296' class='label' font-size='19'>sim-foundation</text>
+  <text x='138' y='320' class='small' font-size='14'>values | tables | macros</text>
+</g>
+<g>
+  <rect x='66' y='360' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='398' r='17' fill='none' stroke='#b56cff' stroke-width='3'/>
+  <text x='138' y='391' class='label' font-size='19'>sim-codecs</text>
+  <text x='138' y='415' class='small' font-size='14'>Lisp | MCP | JSON | binary</text>
+</g>
+<g>
+  <rect x='66' y='455' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='493' r='17' fill='none' stroke='#b56cff' stroke-width='3'/>
+  <text x='138' y='486' class='label' font-size='19'>sim-runtime</text>
+  <text x='138' y='510' class='small' font-size='14'>CL | Scheme | Lua | Ruby | dispatch</text>
+</g>
+<g>
+  <rect x='66' y='550' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='588' r='17' fill='none' stroke='#ffd34a' stroke-width='3'/>
+  <text x='138' y='581' class='label' font-size='19'>sim-numbers</text>
+  <text x='138' y='605' class='small' font-size='14'>full tower | CAS | tensors</text>
+</g>
+<g>
+  <rect x='66' y='645' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='104' cy='683' r='17' fill='none' stroke='#49e6a2' stroke-width='3'/>
+  <text x='138' y='676' class='label' font-size='19'>sim-storage</text>
+  <text x='138' y='700' class='small' font-size='14'>lazy lists | tables | db</text>
+</g>
+<g>
+  <rect x='1254' y='170' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='208' r='17' fill='none' stroke='#47b6ff' stroke-width='3'/>
+  <text x='1326' y='201' class='label' font-size='19'>sim-cli</text>
+  <text x='1326' y='225' class='small' font-size='14'>shell | loaders | REPL | TTY</text>
+</g>
+<g>
+  <rect x='1254' y='265' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='303' r='17' fill='none' stroke='#2ee6ff' stroke-width='3'/>
+  <text x='1326' y='296' class='label' font-size='19'>sim-stream</text>
+  <text x='1326' y='320' class='small' font-size='14'>clocks | topology | combinators</text>
+</g>
+<g>
+  <rect x='1254' y='360' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='398' r='17' fill='none' stroke='#ff8b3d' stroke-width='3'/>
+  <text x='1326' y='391' class='label' font-size='19'>sim-agent-net</text>
+  <text x='1326' y='415' class='small' font-size='14'>agents | MCP | skills | runners</text>
+</g>
+<g>
+  <rect x='1254' y='455' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='493' r='17' fill='none' stroke='#ff5fc8' stroke-width='3'/>
+  <text x='1326' y='486' class='label' font-size='19'>sim-audio-daw</text>
+  <text x='1326' y='510' class='small' font-size='14'>DSP | graph | plugins | hosts</text>
+</g>
+<g>
+  <rect x='1254' y='550' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='588' r='17' fill='none' stroke='#ff5fc8' stroke-width='3'/>
+  <text x='1326' y='581' class='label' font-size='19'>sim-music</text>
+  <text x='1326' y='605' class='small' font-size='14'>MIDI | notation | pitch | sound</text>
+</g>
+<g>
+  <rect x='1254' y='645' width='280' height='76' rx='16' class='panel'/>
+  <circle cx='1292' cy='683' r='17' fill='none' stroke='#64e8ff' stroke-width='3'/>
+  <text x='1326' y='676' class='label' font-size='19'>sim-web</text>
+  <text x='1326' y='700' class='small' font-size='14'>views | scene | layout | WASM</text>
+</g></g>
+<rect x="62" y="778" width="1476" height="74" rx="22" fill="rgba(3,8,16,.78)" stroke="rgba(156,190,255,.18)"/>
+<g transform="translate(100,805)">
+  <circle cx="0" cy="10" r="18" fill="none" stroke="url(#nestGrad)" stroke-width="3"/>
+  <text x="34" y="17" class="label" font-size="19">100% Rust</text>
+  <text x="190" y="17" class="small">minimal kernel</text>
+  <text x="380" y="17" class="small">deterministic</text>
+  <text x="560" y="17" class="small">extensible</text>
+  <text x="725" y="17" class="small">any topology</text>
+  <text x="920" y="17" class="small">codecs are first-class</text>
+  <text x="1190" y="17" class="small">wasm-native</text>
+</g>
+<text x="800" y="872" text-anchor="middle" class="micro">One nest for connected simulation, languages, agents, numbers, music, web, and systems.</text>
+</svg>

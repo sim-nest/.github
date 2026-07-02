@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+<title id="title">sim-nest icon</title>
+<desc id="desc">A dark rounded square icon with a nested hexagonal S mark, representing the sim-nest Rust crate ecosystem.</desc>
+
+<defs>
+  <linearGradient id="nestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#8d6cff"/>
+    <stop offset="22%" stop-color="#4fb5ff"/>
+    <stop offset="45%" stop-color="#29f0d0"/>
+    <stop offset="67%" stop-color="#ffd34a"/>
+    <stop offset="84%" stop-color="#ff7a45"/>
+    <stop offset="100%" stop-color="#ff5fc8"/>
+  </linearGradient>
+  <radialGradient id="bgRad" cx="50%" cy="42%" r="75%">
+    <stop offset="0%" stop-color="#13203c"/>
+    <stop offset="44%" stop-color="#07111f"/>
+    <stop offset="100%" stop-color="#02060c"/>
+  </radialGradient>
+  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="45%" stop-color="#f7fbff"/>
+    <stop offset="100%" stop-color="#74d9ff"/>
+  </radialGradient>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="blur"/>
+    <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.25 0 0 0 0 0.6 0 0 0 0 1 0 0 0 .9 0" result="glow"/>
+    <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    .title { font: 800 108px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: 4px; fill: #f7fbff; }
+    .subtitle { font: 400 29px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #a9bdd8; letter-spacing: .5px; }
+    .label { font: 700 24px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #f7fbff; letter-spacing: .4px; }
+    .small { font: 400 17px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #a9bdd8; }
+    .micro { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8ea5c7; letter-spacing: .4px; }
+    .logoS { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 900; fill: #ffffff; filter:url(#tinyGlow); }
+    .panel { fill: rgba(7,17,31,.72); stroke: rgba(156,190,255,.22); stroke-width: 1.4; }
+    .line { fill: none; stroke-width: 1.8; opacity: .9; filter: url(#tinyGlow); }
+    .mutedLine { fill: none; stroke: rgba(149, 179, 216, .20); stroke-width: 1; }
+  </style>
+</defs>
+
+<rect x="38" y="38" width="948" height="948" rx="224" fill="url(#bgRad)" stroke="rgba(255,255,255,.18)" stroke-width="4"/>
+<circle cx="512" cy="512" r="360" fill="none" stroke="url(#nestGrad)" stroke-width="2" opacity=".16"/>
+<circle cx="512" cy="512" r="280" fill="none" stroke="url(#nestGrad)" stroke-width="2" opacity=".12"/>
+<g filter="url(#softGlow)">
+<polygon points='512.0,252.4 736.8,382.2 736.8,641.8 512.0,771.6 287.2,641.8 287.2,382.2' fill='none' stroke='url(#nestGrad)' stroke-width='22.0' stroke-linejoin='round' opacity='0.95'/>
+<polygon points='512.0,309.6 687.3,410.8 687.3,613.2 512.0,714.4 336.7,613.2 336.7,410.8' fill='none' stroke='url(#nestGrad)' stroke-width='15.4' stroke-linejoin='round' opacity='0.75' stroke-dasharray='88.0 44.0'/>
+<polygon points='512.0,366.8 637.7,439.4 637.7,584.6 512.0,657.2 386.3,584.6 386.3,439.4' fill='none' stroke='url(#nestGrad)' stroke-width='11.0' stroke-linejoin='round' opacity='0.55' stroke-dasharray='88.0 44.0'/>
+<circle cx='512.0' cy='512.0' r='35.2' fill='url(#coreGlow)' opacity='.95'/>
+<text x='512.0' y='604.4' text-anchor='middle' class='logoS' font-size='343.2'>S</text>
+</g>
+</svg>
