@@ -24,7 +24,7 @@ shared value model.
 | repo | what it is |
 |---|---|
 | [`sim-kernel`](https://github.com/sim-nest/sim-kernel) | The small, steady center that lets every SIM piece connect. |
-| [`sim-cli`](https://github.com/sim-nest/sim-cli) | The terminal way in -- one sim command that starts a session, loads plug-ins, and answers you at a live prompt. |
+| [`sim-run`](https://github.com/sim-nest/sim-run) | The terminal way in -- one sim command that starts a session, loads plug-ins, and answers you at a live prompt. |
 | [`sim-citizen`](https://github.com/sim-nest/sim-citizen) | How a domain's own data types become first-class, well-behaved SIM values, with the wiring written for you. |
 | [`sim-foundation`](https://github.com/sim-nest/sim-foundation) | The shared groundwork the rest of SIM stands on -- values, tables, macros, and the runnable lessons that teach them. |
 | [`sim-shape`](https://github.com/sim-nest/sim-shape) | It is the single component that decides whether a piece of data fits a described pattern, and tells you exactly what it found inside. |
@@ -56,7 +56,23 @@ shared value model.
 - **Rust all the way down.** Fast, safe, concurrent, cross-platform, crate-native,
   and wasm-ready.
 
-## Getting started
+## Run it
+
+New here? Run it first -- SIM is a program you run, not just a crate you build
+against. Install the `sim-run` crate; it gives you the `sim` command.
+
+```bash
+cargo install sim-run     # installs the `sim` command
+sim repl                  # a live prompt: type (math/add 6 7) -> 13
+sim webui                 # open the browser UI at the URL it prints
+sim serve mcp             # a Model Context Protocol server over stdio
+```
+
+The batteries-included build adds the serve surfaces without a separate install:
+`cargo install sim-nest --features serve-cli`. Full walkthrough (what each
+surface shows, local fallbacks): [sim-say](https://github.com/sim-nest/sim-say).
+
+## Build against it (for developers)
 
 ```bash
 # add the kernel, then the libraries you want
